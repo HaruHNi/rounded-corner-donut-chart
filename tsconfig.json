@@ -2,10 +2,13 @@
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
     "noImplicitAny": true,
-    "module": "es6",
+    "module": "esnext",
     "target": "es5",
     "allowJs": true,
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    "jsxImportSource": "@emotion/react",
+    "jsx": "react-jsx"
   },
-  "files": ["src/index.ts"]
+  "include": ["example/**/*"],
+  "exclude": ["node_modules", "public"]
 }
